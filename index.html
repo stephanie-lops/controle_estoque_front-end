@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Parts Inventory</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h1>Parts Inventory</h1>
+        </div>
+        <div class="banner">
+            <img src="https://marketplace.canva.com/EAFoustdoMc/1/0/1600w/canva-beige-aesthetic-fashion-style-banner-landscape-k4EiS0uPqD0.jpg"
+                alt="y">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Item: ">
+        <input type="text" id="newSize" placeholder="Size:">
+        
+                <!-- novo
+        <select name="status" id="newStatus">
+          <option value="Pendente">Pendente</option>
+          <option value="Concluído">Concluído</option>
+        </select>
+        <br><br> -->
+
+        <input type="text" id="newQuantity" placeholder="Quantity:">
+        
+
+        <button onclick="newItem()" class="addBtn">Adicionar</button>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Item</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
